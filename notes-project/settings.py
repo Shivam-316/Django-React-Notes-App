@@ -126,7 +126,7 @@ LOGIN_REDIRECT_URL = 'notes/'
 
 LOGOUT_REDIRECT_URL = ''
 
-CORS_ALLOWED_ORIGINS = config("CORS_ALLOWED_ORIGINS", cast=lambda v : [s.strip() for s in v.split(',')])
+CORS_ALLOWED_ORIGINS = config("ALLOWED_CORS", cast=lambda v : [s.strip() for s in v.split(',')])
 
 
 # Static files (CSS, JavaScript, Images)
