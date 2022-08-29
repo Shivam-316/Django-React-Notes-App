@@ -26,15 +26,11 @@ SECRET_KEY = config("SK", default='')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config("DEBUG", default=False, cast=bool)
 
-<<<<<<< HEAD
-ALLOWED_HOSTS = config("ALLOWED_HOSTS", cast=lambda v : [s.strip() for s in v.split(',')])
-=======
 ALLOWED_HOSTS = config(
     "ALLOWED_HOSTS", 
     cast=lambda v : [s.strip() for s in v.split(',')], 
     default='http://127.0.0.1:8000, http://127.0.0.1:5173'
 )
->>>>>>> master
 
 
 # Application definition
