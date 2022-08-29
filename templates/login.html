@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head %}
+  <link rel="stylesheet" href="{% static 'forms.css' %}">
+{% endblock head %}
+
+{% block content %}
+<div class="flex max-height">
+  <div class="notes__container">
+    <div class="notes__container-title flex">
+        <h1 class="notes__container-heading">Login</h1>
+    </div>
+    <div class="notes__container-body flex">
+      <img src="{% static 'avatar-1.svg' %}" alt="Avatar" class="avatarImg"/>
+      <form method="POST" action="{% url 'login' %}" class="custom__form">
+          {% csrf_token %}
+          {{form}}
+          <div class="custom__form-submit flex">
+            <button type="submit">Login</button>
+          </div>
+      </form>  
+    </div>
+  </div>
+</div>
+{% endblock content %}

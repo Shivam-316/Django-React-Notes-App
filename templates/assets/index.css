@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;400;600;700;900&display=swap");
+
+:root {
+  --body-color-regular: hsl(0, 0%, 0%);
+  --body-color-light: hsl(0, 0%, 25%);
+
+  --text-color-primary: hsl(0, 0%, 100%);
+  --text-color-light: hsl(0, 0%, 50%);
+  --text-color-delete: hsl(0, 100%, 60%);
+
+  --title-color-dark: hsl(0, 0%, 0%);
+  --title-color-primary: hsl(44, 100%, 60%);
+
+  --h1-font-size: 2.25rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --h4-font-size: 1.125rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.7rem;
+
+  --font-weight-vbold: 900;
+  --font-weight-bold: 700;
+  --font-weight-sbold: 600;
+  --font-weight-regular: 400;
+  --font-weight-light: 100;
+
+  --box-shadow: 5px 5px 5px 0px hsla(0, 100%, 98%, 0.281);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: "Fira Sans", sans-serif;
+  font-size: var(--normal-font-size);
+}
+
+body {
+  background-color: var(--body-color-regular);
+  color: var(--text-color-primary);
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+}
+
+p,
+li,
+h1,
+h2,
+h3,
+h4 {
+  overflow-wrap: break-word;
+  hyphens: auto;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: var(--font-weight-sbold);
+  line-height: 1.2;
+}
+
+ul {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.flex {
+  display: flex;
+}
