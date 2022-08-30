@@ -1,5 +1,11 @@
 db.sqlite3
 __pycache__
-migrations
 *.scss
+
+.env
+Procfile
 Pipfile*
+staticfiles
+*/migrations/*
+!*/migrations/__init__.py
+
