@@ -15,6 +15,7 @@
   --h2-font-size: 1.5rem;
   --h3-font-size: 1.25rem;
   --h4-font-size: 1.125rem;
+
   --normal-font-size: 1rem;
   --small-font-size: 0.875rem;
   --smaller-font-size: 0.7rem;
@@ -82,18 +83,13 @@ ul {
 
 a {
   text-decoration: none;
+  color: var(--title-color-primary);
 }
 
 button {
   cursor: pointer;
   border: none;
   outline: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
 }
 
 .flex {

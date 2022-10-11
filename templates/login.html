@@ -12,13 +12,18 @@
         <h1 class="notes__container-heading">Login</h1>
     </div>
     <div class="notes__container-body flex">
-      <img src="{% static 'avatar-1.svg' %}" alt="Avatar" class="avatarImg"/>
+      <div class="avatarImg">
+        <div>
+          <img src="{% static 'avatar-1.svg' %}" alt="Avatar"/>
+        </div>
+      </div>
       <form method="POST" action="{% url 'login' %}" class="custom__form">
           {% csrf_token %}
           {{form}}
           <div class="custom__form-submit flex">
             <button type="submit">Login</button>
           </div>
+          <div class="custom__form-link">Don't have a account, <a href="{% url 'signup' %}">SignUp!</a></div>
       </form>  
     </div>
   </div>
